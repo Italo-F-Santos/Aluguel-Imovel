@@ -1,0 +1,10 @@
+CREATE DATABASE if not exists ImovelDB;
+use ImovelDB;
+
+CREATE TABLE Imovel
+(
+	id int unsigned not null auto_increment,
+	cep int not null,
+	descricao varchar(250) not null,
+	PRIMARY KEY (id)
+);
